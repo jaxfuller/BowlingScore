@@ -145,7 +145,8 @@ int main() {
       // if spare
     } else if (scorebook[0][i] + scorebook[1][i] == 10) {
       calcScore[i] = scorebook[0][i] + scorebook[1][i] + scorebook[0][i + 1] + calcScore[i-1];
-
+      
+      //first frame
     } else if (i == 0) {
       calcScore[i] = scorebook[0][i] + scorebook[1][i];
       
